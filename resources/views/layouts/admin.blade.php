@@ -7,10 +7,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Font Awesome 5.15.4 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<<<<<<< HEAD
-    <link rel="stylesheet" href="{{ asset('css/admin.css') }}">
-    @yield('css')
-=======
     <style>
         a{
             text-decoration: none;
@@ -66,7 +62,7 @@
         }
         
         .row {
-            min-height: 100vh; /* Đảm bảo row chiếm toàn bộ chiều cao màn hình */
+            /*min-height: 100vh;  Đảm bảo row chiếm toàn bộ chiều cao màn hình */
             display: flex;
             flex-wrap: wrap;
         }
@@ -81,7 +77,6 @@
             margin-top: 10px; /* Giữ nguyên margin-top của các liên kết */
         }
     </style>
->>>>>>> be7e2c3dc675813ffc34190bf603c9a64669482f
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -97,30 +92,14 @@
         <div class="col-md-7 gap-4">
             <a href="#"><i class="fas fa-bell"></i></a> 
             <a href="#"><i class="fas fa-envelope"></i></a> 
-<<<<<<< HEAD
-            <a href="#"><i class="fas fa-user"></i></a>
-            <a href="{{ route('logout') }}" onclick="return confirm('Bạn có chắc muốn đăng xuất?')">
-                <i class="fas fa-sign-out-alt"></i> Đăng xuất
-            </a>
-=======
             <a href="#"><i class="fas fa-user"></i></a> 
->>>>>>> be7e2c3dc675813ffc34190bf603c9a64669482f
         </div>
     </nav>
     <div class="row">
         <div class="col-md-1 navbar navbar-expand-lg bg-body-tertiary" style="max-width: 60px;"></div>
-<<<<<<< HEAD
         <div class="col-md-2 bg-body-tertiary" style="max-width: 208px; min-height:100vh;">
             <div class="d-flex mt-4">
-                <a href="{{ route('home') }}"><i class="fas fa-home" style="margin-right: 14px; color: red"></i>Home Page</a> 
-            </div>
-            <div class="d-flex mt-3">
-                <a href="{{ route('admin.home') }}"><i class="fas fa-home" style="margin-right: 14px; color: mediumturquoise"></i>Dashboard</a> 
-=======
-        <div class="col-md-2 bg-body-tertiary" style="max-width: 208px;">
-            <div class="d-flex mt-4">
-                <a href="/adminhome"><i class="fas fa-home" style="margin-right: 14px; color: mediumturquoise"></i>Dashboard</a> 
->>>>>>> be7e2c3dc675813ffc34190bf603c9a64669482f
+                <a href="/admin"><i class="fas fa-home" style="margin-right: 14px; color: mediumturquoise"></i>Dashboard</a> 
             </div>
             <div class="d-flex mt-3">
                 <a href="#"><i class="fas fa-envelope" style="margin-right: 14px; color:mediumpurple"></i>Email</a> 
@@ -156,23 +135,15 @@
                 <a href="#"><i class="fas fa-stream" style="margin-right: 14px; color:mediumpurple"></i>Mulitiple Levels</a> 
             </div>
             <div class="d-flex mt-3">
-<<<<<<< HEAD
-                <a href="{{ route('admin.blankpageadmin') }}"><i class="fas fa-file" style="margin-right: 14px; color:grey;"></i>Blank Page</a> 
+                <a href="/admin/blankpage"><i class="fas fa-file" style="margin-right: 14px; color:grey;"></i>Blank Page</a> 
             </div>
             <div class="d-flex mt-3">
-                <a href="{{ route('admin.themsanpham') }}"><i class="fas fa-list" style="margin-right: 14px; color:mediumpurple;"></i>Add Product</a> 
-=======
-                <a href="/blankpageadmin"><i class="fas fa-file" style="margin-right: 14px; color:grey;"></i>Blank Page</a> 
->>>>>>> be7e2c3dc675813ffc34190bf603c9a64669482f
+                <a href="/admin/them-san-pham"><i class="fas fa-list" style="margin-right: 14px; color:mediumpurple;"></i>Add Product</a> 
             </div>
         </div>
         <div class="col-md-9">@yield('content')</div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
-<<<<<<< HEAD
-    @yield('js')
-=======
->>>>>>> be7e2c3dc675813ffc34190bf603c9a64669482f
 </body>
 </html>

@@ -3,29 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-<<<<<<< HEAD
 use Illuminate\Support\Facades\Session;
 use Illuminate\Validation\ValidationException;
-use App\Models\NguoiDung;
 
 class loginController extends Controller
 {
     public function showLoginForm()
     {
-        return view('dangnhap'); 
-=======
-
-class loginController extends Controller
-{
-    public function index()
-    {
-        return view('dangnhap');
->>>>>>> be7e2c3dc675813ffc34190bf603c9a64669482f
+        return view('page.dangnhap'); 
     }
 
     public function login(Request $request)
     {
-<<<<<<< HEAD
         try {
             // Xác thực dữ liệu form
             $request->validate([
@@ -39,34 +28,21 @@ class loginController extends Controller
             ]);
 
             // Thông tin đăng nhập cứng
-            // $validEmail = 'admin@gmail.com';
-            // $validPassword = '12345678';
-            // Query từ bảng NguoiDung (sử dụng model Eloquent)
-            $user = NguoiDung::where('email', $request->exampleInputEmail1)
-                              ->where('matKhau', $request->exampleInputPassword)
-                              ->first();
+            $validEmail = 'admin@gmail.com';
+            $validPassword = '12345678';
+
             // Kiểm tra thông tin đăng nhập
-           if ($user) {
-                // Lưu thông tin người dùng vào session (bao gồm email và role)
-                Session::put('user', [
-                    'email' => $user->email,
-                    'role' => $user->role,
-                    'maNguoiDung' => $user->maNguoiDung,
-                    'hoTenNguoiDung' => $user->hoTenNguoiDung
-                ]);
-                
-                // Trả về success với role để JS xử lý redirect
-                return response()->json([
-                    'success' => true,
-                    'role' => $user->role
-                ], 200);
+            if ($request->exampleInputEmail1 === $validEmail && $request->exampleInputPassword === $validPassword) {
+                // Lưu thông tin người dùng vào session
+                Session::put('user', ['email' => $validEmail]);
+                return response()->json(['success' => true], 200);
             }
 
             // Ném lỗi nếu thông tin đăng nhập sai
             return response()->json([
                 'message' => 'Email hoặc mật khẩu không đúng.',
             ], 422);
-            } catch (ValidationException $e) {
+        } catch (ValidationException $e) {
             return response()->json([
                 'errors' => $e->errors(),],422);
             }catch (\Exception $e) {
@@ -74,8 +50,5 @@ class loginController extends Controller
                 'message' => 'Đã có lỗi xảy ra: ' . $e->getMessage(),
             ], 500);
         }
-=======
-        return redirect('/home'); // chuyển hướng về home
->>>>>>> be7e2c3dc675813ffc34190bf603c9a64669482f
     }
 }

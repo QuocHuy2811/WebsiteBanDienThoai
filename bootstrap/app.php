@@ -11,13 +11,7 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
-<<<<<<< HEAD
-        $middleware->alias([
-            'admin.auth' => \App\Http\Middleware\AdminAuth::class,  // Đăng ký alias middleware AdminAuth
-        ]);
-=======
         //
->>>>>>> be7e2c3dc675813ffc34190bf603c9a64669482f
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //

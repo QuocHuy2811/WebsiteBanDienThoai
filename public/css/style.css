@@ -32,10 +32,6 @@ body { font-family:Arial, Helvetica, sans-serif; }
 
 .header-area {
     background: none repeat scroll 0 0 #f4f4f4;
-<<<<<<< HEAD
-    font-size: 12px;
-=======
->>>>>>> be7e2c3dc675813ffc34190bf603c9a64669482f
 }
 .header-area a {
     color: #888;
@@ -377,7 +373,6 @@ z-index: 999;}
   text-align: center;
 }
 
-<<<<<<< HEAD
 /* Ngay 9/10/2025 update css image */
 .product-f-image {
     position: relative;
@@ -389,12 +384,6 @@ z-index: 999;}
     object-fit: cover; /* Cắt ảnh để vừa khung */
 }
 /* */
-=======
-
-.product-f-image {
-    position: relative;
-}
->>>>>>> be7e2c3dc675813ffc34190bf603c9a64669482f
 .product-hover {
     height: 100%;
     left: 0;
