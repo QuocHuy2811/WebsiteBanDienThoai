@@ -21,7 +21,11 @@
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
+<<<<<<< HEAD
     @yield('css')
+=======
+
+>>>>>>> be7e2c3dc675813ffc34190bf603c9a64669482f
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -41,6 +45,7 @@
                             <li><a href="#"><i class="fa fa-heart"></i> Wishlist</a></li>
                             <li><a href="/cart"><i class="fa fa-user"></i> My Cart</a></li>
                             <li><a href=""><i class="fa fa-user"></i> Checkout</a></li>
+<<<<<<< HEAD
                             @if(Session::has('user'))
                                 <!-- Đã đăng nhập: Ẩn login, thay bằng logout -->
                                 <li><a href="{{ route('logout') }}" onclick="return confirm('Bạn có chắc muốn đăng xuất?')">
@@ -50,6 +55,9 @@
                                 <!-- Chưa đăng nhập: Hiển thị login -->
                                 <li><a href="/dangnhap"><i class="fa fa-user"></i> Login</a></li>
                             @endif
+=======
+                            <li><a href="/dangnhap"><i class="fa fa-user"></i> Login</a></li>
+>>>>>>> be7e2c3dc675813ffc34190bf603c9a64669482f
                         </ul>
                     </div>
                 </div>
@@ -74,6 +82,7 @@
                                     <li><a href="#">German</a></li>
                                 </ul>
                             </li>
+<<<<<<< HEAD
                             @if(Session::has('user'))
                                 @if(Session::get('user.role') === 'khachhang')
                                     @php
@@ -91,6 +100,9 @@
                                 <!-- Chưa đăng nhập: Đăng ký -->
                                 <a href="/dangki"><i class="fa fa-user"></i> Đăng ký</a>
                             @endif
+=======
+                            <a href="/dangki">Đăng ký</a>
+>>>>>>> be7e2c3dc675813ffc34190bf603c9a64669482f
                         </ul>
                     </div>
                 </div>
@@ -127,6 +139,7 @@
                         <span class="icon-bar"></span>
                     </button>
                 </div> 
+<<<<<<< HEAD
                 <ul class="nav navbar-nav">
                     <li class="{{ request()->routeIs('home') ? 'active' : '' }}">
                         <a href="{{ route('home') }}">Home</a>
@@ -153,6 +166,24 @@
         </div>
     </div> <!-- End mainmenu area -->
     @if (Request::path() !== '/')
+=======
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/shop">Shop page</a></li>
+                        <li><a href="/single">Single product</a></li>
+                        <li><a href="/cart">Cart</a></li>
+                        <li><a href="/checkout">Checkout</a></li>
+                        <li><a href="#">Category</a></li>
+                        <li><a href="#">Others</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>  
+            </div>
+        </div>
+    </div> <!-- End mainmenu area -->
+    @if (Request::path() !== '/' & Request::path() !== '/home')
+>>>>>>> be7e2c3dc675813ffc34190bf603c9a64669482f
         @include('layouts.nav')
     @endif
     <div>@yield('content')</div>
@@ -254,6 +285,9 @@
         <!-- Slider -->
     <script type="text/javascript" src="{{ asset('js/bxslider.min.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('js/script.slider.js') }}"></script>
+<<<<<<< HEAD
     @yield('js')
+=======
+>>>>>>> be7e2c3dc675813ffc34190bf603c9a64669482f
   </body>
 </html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php use Illuminate\Support\Str; ?>
 @extends('layouts.app')
 @section('title', 'Welcome to uStora')
@@ -12,6 +13,11 @@
     </style> -->
 @section('js')
 
+=======
+@extends('layouts.app')
+@section('title', 'Welcome to uStora')
+
+>>>>>>> be7e2c3dc675813ffc34190bf603c9a64669482f
 @section('content')
     <div class="slider-area">
         	<!-- Slider -->
@@ -91,7 +97,11 @@
         </div>
     </div> <!-- End promo area -->
     
+<<<<<<< HEAD
     <!-- <div class="maincontent-area">
+=======
+    <div class="maincontent-area">
+>>>>>>> be7e2c3dc675813ffc34190bf603c9a64669482f
         <div class="zigzag-bottom"></div>
         <div class="container">
             <div class="row">
@@ -193,6 +203,7 @@
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
     </div> End main content area -->
     <div class="maincontent-area">
     <div class="zigzag-bottom"></div>
@@ -229,6 +240,10 @@
         </div>
     </div>
 </div>
+=======
+    </div> <!-- End main content area -->
+    
+>>>>>>> be7e2c3dc675813ffc34190bf603c9a64669482f
     <div class="brands-area">
         <div class="zigzag-bottom"></div>
         <div class="container">
@@ -402,4 +417,8 @@
             </div>
         </div>
     </div> <!-- End product widget area -->
+<<<<<<< HEAD
 @endsection
+=======
+@endsection
+>>>>>>> be7e2c3dc675813ffc34190bf603c9a64669482f

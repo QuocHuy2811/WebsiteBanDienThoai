@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Đăng nhập')
+<<<<<<< HEAD
 
 @section('navTitle', 'Đăng nhập')
 
@@ -65,6 +66,9 @@
         });
     });
     </script>
+=======
+@section('navTitle', 'Đăng nhập')
+>>>>>>> be7e2c3dc675813ffc34190bf603c9a64669482f
 @section('content')
 <style>
     .contact-container {
@@ -114,17 +118,25 @@
     }
     .contact-form .error {
         color: red;
+<<<<<<< HEAD
         font-size: 12px;
         margin-top: 5px;
         text-align: left;
         display: none; /* Ẩn ban đầu */
+=======
+        font-size: 14px;
+        margin-top: 10px;
+>>>>>>> be7e2c3dc675813ffc34190bf603c9a64669482f
     }
     .contact-form .success {
         color: green;
         font-size: 14px;
         margin-top: 10px;
         text-align: center;
+<<<<<<< HEAD
         display: none; /* Ẩn ban đầu */
+=======
+>>>>>>> be7e2c3dc675813ffc34190bf603c9a64669482f
     }
     .contact-form button {
         width: 100%;
@@ -143,6 +155,7 @@
 <div class="contact-container">
     <div class="contact-form">
         <h2>Đăng nhập</h2>
+<<<<<<< HEAD
         <div class="error" id="error-message"></div>
         <div class="success" id="success-message"></div>
         <form id="login-form" method="post" action="{{ route('login') }}">
@@ -167,4 +180,20 @@
     </div>
 </div>
 
+=======
+        <form method="post" action="/login">
+            @csrf
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email</label>
+                <input type="email" id="exampleInputEmail1" name="exampleInputEmail1" value="" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputSDT">Mật khẩu</label>
+                <input type="password" id="exampleInputPassword" name="exampleInputPassword" value="" required>
+            </div>
+            <button type="submit">Đăng nhập</button>
+        </form>
+    </div>
+</div>
+>>>>>>> be7e2c3dc675813ffc34190bf603c9a64669482f
 @endsection

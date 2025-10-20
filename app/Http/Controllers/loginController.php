@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Session;
 use Illuminate\Validation\ValidationException;
 use App\Models\NguoiDung;
@@ -12,10 +13,19 @@ class loginController extends Controller
     public function showLoginForm()
     {
         return view('dangnhap'); 
+=======
+
+class loginController extends Controller
+{
+    public function index()
+    {
+        return view('dangnhap');
+>>>>>>> be7e2c3dc675813ffc34190bf603c9a64669482f
     }
 
     public function login(Request $request)
     {
+<<<<<<< HEAD
         try {
             // Xác thực dữ liệu form
             $request->validate([
@@ -64,5 +74,8 @@ class loginController extends Controller
                 'message' => 'Đã có lỗi xảy ra: ' . $e->getMessage(),
             ], 500);
         }
+=======
+        return redirect('/home'); // chuyển hướng về home
+>>>>>>> be7e2c3dc675813ffc34190bf603c9a64669482f
     }
 }

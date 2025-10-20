@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<!-- resources/views/layouts/nav.blade.php -->
+>>>>>>> be7e2c3dc675813ffc34190bf603c9a64669482f
 <div class="product-big-title-area">
         <div class="container">
             <div class="row">
